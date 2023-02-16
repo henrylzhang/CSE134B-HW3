@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Inter', sans-serif, Arial, Helvetica, sans-serif;
+}
+
+/* About Page */
+
+.header-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 0%;
+  list-style: none;
+  font-size: 1.5rem;
+  width: 100%;
+}
+
+.header-main > div {
+  display: flex;
+  flex-direction: row;
+}
+
+.header-left > li {
+  font-weight: 500;
+}
+
+.header-right > li {
+  padding-left: 1.25rem;
+}
+
+.header-main a {
+  color: #000;
+  text-decoration: none;
+}
+
+.welcome-section > hr {
+  width: 10%;
+}
+
+.welcome-text {
+  text-align: center;
+}
+
+.personal-photo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+  border-radius: 9999px;
+  margin-top: 2rem;
+}
+
+.skill-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  font-size: 2.25rem;
+  padding: 1.5rem 10rem;
+}
+
+.skill-list li {
+  font-weight: 500;
+}
+
+.intro-section {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.intro-section > h1 {
+  text-align: center;
+}
+
+.social-list {
+  display: flex;
+  padding-left: 0%;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+}
+
+.social-list > li {
+  width: 2rem;
+  padding-left: 1rem;
+}
+
+/* Projects Page */
+
+.projects-section > div {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.projects-section > hr {
+  width: 95%;
+}
+
+.left-project {
+  display: flex;
+  flex-direction: row;
+}
+
+.left-project > div {
+  width: 50%;
+}
+
+.left-project img {
+  width: 100%;
+  border-radius: 1.5rem;
+}
+
+.right-project {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.right-project > div {
+  width: 50%;
+}
+
+.right-project img {
+  width: 100%;
+  border-radius: 1.5rem;
+}
+
+.right-project > .project-description {
+  text-align: right;
+}
+
+/* FAQ Page */
+
+.faq-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.faq-section > details {
+  margin: 2rem;
+}
+
+.faq-section > details summary {
+  outline: 2px solid #000;
+  outline-offset: 10px;
+  border-radius: 0.5rem;
+}
+
+.faq-section video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Contact Page */
+
+.contact-section {
+  padding-left: 0%;
+  margin: 4rem;
+  outline: 2px solid #000;
+  outline-offset: 15px;
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+
+.top-form {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.top-form > input {
+  width: 45%;
+  height: 3rem;
+}
+
+.contact-section input {
+  border-radius: 0.5rem;
+  padding-left: 1rem;
+}
+
+.bottom-form {
+  padding-top: 3rem;
+  width: 100%;
+}
+
+.bottom-form textarea {
+  width: 100%;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  border-radius: 1.5rem;
+  border: 2px solid #000;
+  font-family: Arial, Helvetica, sans-serif;
+  resize: none;
+}
+
+::placeholder {
+  color: #000;
+  opacity: 1;
+}
+
+.submit-button {
+  margin-top: 1.5rem;
+  width: 100%;
+  height: 2.5rem;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 0.5rem;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.submit-button:hover {
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+}
+
+@media (max-width: 960px) {
+  /* About Page */
+
+  .header-main {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
+  }
+
+  .header-main > div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-right {
+    padding-top: 0.5rem;
+  }
+
+  .header-main li {
+    padding-left: 0;
+  }
+
+  .skill-list {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+  }
+
+  .skill-list li {
+    padding-bottom: 0.25rem;
+  }
+
+  .intro-section {
+    width: 75%;
+  }
+
+  .personal-photo {
+    width: 50%;
+  }
+
+  /* Projects Page */
+
+  .projects-section div {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .projects-section p {
+    text-align: center;
+  }
+
+  /* Contact Page */
+
+  .contact-section {
+    margin: 2rem;
+    margin-top: 4rem;
+    padding: 1rem;
+  }
+}
