@@ -240,7 +240,113 @@ body {
   color: var(--white);
 }
 
-@media (max-width: 960px) {
+@media only screen and (max-width: 480px) {
+  body {
+    font-size: 14px; /* example font size for smaller screens */
+  }
+
+  .header-main {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
+  }
+
+  .header-left {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .header-right {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .welcome-text {
+    font-size: 1.25rem;
+  }
+
+  .personal-photo {
+    width: 50%;
+  }
+
+  .skill-list {
+    flex-direction: column;
+    font-size: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  .skill-list li {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .intro-section {
+    width: 80%;
+  }
+
+  .social-list > li {
+    width: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .left-project,
+  .right-project {
+    flex-direction: column;
+  }
+
+  .left-project > div,
+  .right-project > div {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .left-project img,
+  .right-project img {
+    width: 100%;
+    border-radius: 1rem;
+  }
+
+  .faq-section > details {
+    margin: 1rem;
+  }
+
+  .faq-section > details summary {
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+  }
+
+  .faq-section > details p {
+    font-size: 1.25rem;
+  }
+
+  .contact-section {
+    margin: 2rem;
+    padding: 1rem;
+  }
+
+  .top-form {
+    flex-direction: column;
+  }
+
+  .top-form > input {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .bottom-form textarea {
+    border-radius: 0.5rem;
+    padding: 1rem;
+    font-size: 1.25rem;
+  }
+
+  .submit-button {
+    margin-top: 1.5rem;
+    height: 3rem;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 960px) {
   /* About Page */
 
   .header-main {
